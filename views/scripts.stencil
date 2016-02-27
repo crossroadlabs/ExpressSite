@@ -1,4 +1,5 @@
-//===--- main.swift -------------------------------------------------------===//
+<!--
+//===--- scripts.stencil ----------------------------------------------------===//
 //
 //Copyright (c) 2015-2016 Daniel Leping (dileping)
 //
@@ -18,33 +19,8 @@
 //along with Swift Express Site.  If not, see <http://www.gnu.org/licenses/>.
 //
 //===----------------------------------------------------------------------===//
+-->
 
-import Express
-
-let app = express()
-
-app.views.register(StencilViewEngine())
-
-app.get("/:file+", action: StaticAction(path: "public", param:"file"))
-
-app.get("/") { request in
-    let context:[String: Any] = [
-        "product": product,
-        "company": company,
-        "github": github,
-        "copyright": copyright,
-        "domain": domain,
-        "title": "Swift Web Application Framework",
-        "navbar": siteNavbar("home"),
-        "tabs": tabs,
-        "features": features,
-        "scripts": scripts
-    ]
-    return Action.render("index", context: context)
-}
-
-app.listen(9999).onSuccess { server in
-    print("Express was successfully launched on port", server.port)
-}
-
-app.run()
+{% for script in scripts %}
+<script type="text/javascript" src="{{script}}"></script>
+{% endfor %}

@@ -31,9 +31,11 @@ public func ++ <Key: Hashable, Value>(left:Dictionary<Key, Value>, right:Diction
     return new
 }
 
-func siteTitle(subtitle:String) -> String {
-    return "Express: " + subtitle
-}
+let product = ["short": "Express", "full": "Swift Express", "github": "https://github.com/crossroadlabs/Express"]
+let company = ["link": "http://www.crossroadlabs.xyz/", "title": "Crossroad Labs"]
+let github = "https://github.com/crossroadlabs/ExpressSite"
+let copyright = "Daniel Leping"
+let domain = "swiftexpress.io"
 
 let siteNavbarItems:[[String: String]] = [
     ["id": "home", "caption": "Home", "link": "/"],
@@ -70,3 +72,5 @@ let features:[[String:String]] = [
     ["title": "Performance", "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."],
     ["title": "Swift", "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."]
 ]
+
+let scripts = ["js/jq.min.js", "js/bootstrap.min.js", "js/script.js"]

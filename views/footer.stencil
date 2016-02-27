@@ -1,4 +1,5 @@
-//===--- main.swift -------------------------------------------------------===//
+<!--
+//===--- footer.stencil ----------------------------------------------------===//
 //
 //Copyright (c) 2015-2016 Daniel Leping (dileping)
 //
@@ -18,33 +19,22 @@
 //along with Swift Express Site.  If not, see <http://www.gnu.org/licenses/>.
 //
 //===----------------------------------------------------------------------===//
+-->
 
-import Express
-
-let app = express()
-
-app.views.register(StencilViewEngine())
-
-app.get("/:file+", action: StaticAction(path: "public", param:"file"))
-
-app.get("/") { request in
-    let context:[String: Any] = [
-        "product": product,
-        "company": company,
-        "github": github,
-        "copyright": copyright,
-        "domain": domain,
-        "title": "Swift Web Application Framework",
-        "navbar": siteNavbar("home"),
-        "tabs": tabs,
-        "features": features,
-        "scripts": scripts
-    ]
-    return Action.render("index", context: context)
-}
-
-app.listen(9999).onSuccess { server in
-    print("Express was successfully launched on port", server.port)
-}
-
-app.run()
+<footer>
+	<div class="gray_bg">
+	  <div class="container">
+		<div class="text-center footer_bottom">
+		  <div>
+		    <span class="dev_by">The <a class="blue" href="{{product.github}}">{{product.full}}</a> project is developed by <a class="blue" href="{{company.link}}">{{company.title}}</a>.</span>
+		  </div>
+		  <div>
+		    <span class="fork"><a class="blue" href="{{github}}">Fork this website on GitHub</a>.</span>
+		  </div>
+		  <div>
+		    <span class="legal">Copyright © {{copyright}}, and other {{domain}} contributors.</span>
+		  </div>
+		</div>
+	  </div>
+	</div>
+</footer>

@@ -35,29 +35,9 @@
   
   {% include "features.stencil" %}
   
-  <footer>
-    <div class="gray_bg">
-      <div class="container">
-        
-        <div class="text-center footer_bottom">
-          <div>
-          <span class="dev_by">The <a class="blue" href="#">Swift Express</a> project are developed by <a class="blue" href="#">CrossRoad</a>.</span>
-          </div>
-          <div>
-          <span class="fork"><a class="blue" href="#">Fork the website on GitHub</a>.</span>
-          </div>
-          <div>
-          <span class="legal">Copyright © CrossRoad, Inc., and other swiftexpress.com contributors.</span>
-          </div>
-        </div>
-        
-      
-      </div>
-    </div>
-  </footer>
+  {% include "footer.stencil" %}
   
-  <script type="text/javascript" src="js/jq.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+  {% include "scripts.stencil" %}
+  
 </body>
 </html>
