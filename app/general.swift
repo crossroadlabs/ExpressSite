@@ -62,8 +62,8 @@ func siteNavbar(active:String) -> [String: Any] {
 }
 
 let tabs:[[String:Any]] = [
-    ["id": "osx", "caption": "OS X", "listing": "$ npm install express --save", "title": "tab_mac_os", "active": true, "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."],
-    ["id": "linux", "caption": "LINUX", "listing": "$ linux install", "title": "tab_linux", "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."],
+    ["id": "osx", "caption": "OS X", "listing": "$ brew tap crossroadlabs/tap<br>$ brew install swift-express", "title": "Native development environment", "active": true, "text": "Being the native platform for Swift language, OS X with xCode features the best development experience yet. iOS and OS X developers will be pleased with a familiar environment."],
+    ["id": "linux", "caption": "LINUX", "listing": "$ calc installation options<br>> no simple way found yet", "title": "Best for production", "text": "OK, we are working on creating a one-two lines installation approach. Meanwhile, consider following <a href=\"https://github.com/crossroadlabs/Express/blob/master/doc/gettingstarted/installing.md#linux-\">this</a> guide, please."],
 ]
 
 let features:[[String:String]] = [
