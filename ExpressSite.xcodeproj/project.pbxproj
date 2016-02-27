@@ -7,14 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		652C1DD61C81AB470034E043 /* navbar.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 652C1DD51C81AB470034E043 /* navbar.stencil */; };
-		652C1DD81C81ADF80034E043 /* head.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 652C1DD71C81ADF80034E043 /* head.stencil */; };
 		652C1DDA1C81AE780034E043 /* general.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C1DD91C81AE780034E043 /* general.swift */; };
-		652C1DDD1C81AFF00034E043 /* navbar-item.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 652C1DDC1C81AFF00034E043 /* navbar-item.stencil */; };
+		654747B61C821FF7008B1838 /* views in Resources */ = {isa = PBXBuildFile; fileRef = 654747B51C821FF7008B1838 /* views */; };
 		9609B4EA1C5FC19B00141FAB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609B4E91C5FC19B00141FAB /* main.swift */; };
 		968A3BB21C639C8900E4AFCC /* Express.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968A3BB11C639C8900E4AFCC /* Express.framework */; };
 		968A3BB31C639C8900E4AFCC /* Express.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 968A3BB11C639C8900E4AFCC /* Express.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		968A3BB61C639D7A00E4AFCC /* index.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 968A3BB51C639D7A00E4AFCC /* index.stencil */; };
 		968A3BBF1C63A53F00E4AFCC /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968A3BBE1C63A53F00E4AFCC /* BrightFutures.framework */; };
 		968A3BC01C63A53F00E4AFCC /* BrightFutures.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 968A3BBE1C63A53F00E4AFCC /* BrightFutures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		968A3BC21C63A55D00E4AFCC /* Mustache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968A3BC11C63A55D00E4AFCC /* Mustache.framework */; };
@@ -59,17 +56,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		652C1DD51C81AB470034E043 /* navbar.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = navbar.stencil; sourceTree = "<group>"; };
-		652C1DD71C81ADF80034E043 /* head.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = head.stencil; sourceTree = "<group>"; };
 		652C1DD91C81AE780034E043 /* general.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = general.swift; sourceTree = "<group>"; };
-		652C1DDC1C81AFF00034E043 /* navbar-item.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "navbar-item.stencil"; sourceTree = "<group>"; };
+		654747B51C821FF7008B1838 /* views */ = {isa = PBXFileReference; lastKnownFileType = folder; path = views; sourceTree = "<group>"; };
 		9609B4D91C5FC0DC00141FAB /* ExpressSite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpressSite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9609B4E31C5FC0DC00141FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9609B4E91C5FC19B00141FAB /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9609B4EE1C5FC2EC00141FAB /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
 		9609B4F11C5FC51A00141FAB /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		968A3BB11C639C8900E4AFCC /* Express.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Express.framework; path = Carthage/Build/Mac/Express.framework; sourceTree = "<group>"; };
-		968A3BB51C639D7A00E4AFCC /* index.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.stencil; sourceTree = "<group>"; };
 		968A3BBE1C63A53F00E4AFCC /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/Mac/BrightFutures.framework; sourceTree = "<group>"; };
 		968A3BC11C63A55D00E4AFCC /* Mustache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mustache.framework; path = Carthage/Build/Mac/Mustache.framework; sourceTree = "<group>"; };
 		968A3BC41C63A56D00E4AFCC /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
@@ -106,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				9609B4EB1C5FC2A000141FAB /* app */,
-				9609B4EC1C5FC2BF00141FAB /* views */,
+				654747B51C821FF7008B1838 /* views */,
 				9609B4EE1C5FC2EC00141FAB /* public */,
 				9609B4F01C5FC31800141FAB /* Frameworks */,
 				9609B4DA1C5FC0DC00141FAB /* Products */,
@@ -130,17 +124,6 @@
 				652C1DD91C81AE780034E043 /* general.swift */,
 			);
 			path = app;
-			sourceTree = "<group>";
-		};
-		9609B4EC1C5FC2BF00141FAB /* views */ = {
-			isa = PBXGroup;
-			children = (
-				968A3BB51C639D7A00E4AFCC /* index.stencil */,
-				652C1DD51C81AB470034E043 /* navbar.stencil */,
-				652C1DDC1C81AFF00034E043 /* navbar-item.stencil */,
-				652C1DD71C81ADF80034E043 /* head.stencil */,
-			);
-			path = views;
 			sourceTree = "<group>";
 		};
 		9609B4F01C5FC31800141FAB /* Frameworks */ = {
@@ -219,10 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				652C1DD81C81ADF80034E043 /* head.stencil in Resources */,
-				652C1DDD1C81AFF00034E043 /* navbar-item.stencil in Resources */,
-				652C1DD61C81AB470034E043 /* navbar.stencil in Resources */,
-				968A3BB61C639D7A00E4AFCC /* index.stencil in Resources */,
+				654747B61C821FF7008B1838 /* views in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
