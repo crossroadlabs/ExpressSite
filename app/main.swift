@@ -29,8 +29,9 @@ app.get("/:file+", action: StaticAction(path: "public", param:"file"))
 
 app.get("/") { request in
     let context:[String: Any] = [
+        "title": siteTitle("Swift Web Application Framework"),
         "navbar": siteNavbar("home"),
-        "title": siteTitle("Swift Web Application Framework")
+        "tabs": tabs
     ]
     return Action.render("index", context: context)
 }

@@ -1,0 +1,52 @@
+<!--
+//===--- tabs.stencil ----------------------------------------------------===//
+//
+//Copyright (c) 2015-2016 Daniel Leping (dileping)
+//
+//This file is part of Swift Express Site.
+//
+//Swift Express Site is free software: you can redistribute it and/or modify
+//it under the terms of the GNU Affero General Public License as published by
+//the Free Software Foundation, either version 3 of the License, or
+//(at your option) any later version.
+//
+//Swift Express Site is distributed in the hope that it will be useful,
+//but WITHOUT ANY WARRANTY; without even the implied warranty of
+//MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//GNU Affero General Public License for more details.
+//
+//You should have received a copy of the GNU Affero General Public License
+//along with Swift Express Site.  If not, see <http://www.gnu.org/licenses/>.
+//
+//===----------------------------------------------------------------------===//
+-->
+<section>
+	<div class="lightgray_bg block_os">
+	  <div class="container">
+		<div class="col-lg-offset-3 col-lg-6">
+		  <ul class="os_list text-center nav nav-tabs">
+		    {% for tab in tabs %}
+			    <li 
+		    	{% if tab.active %}
+					class="active_os active"
+				{% endif %}
+		    	><a data-toggle="tab" href="#tab_{{tab.id}}">{{tab.caption}}</a></li>
+		    {% endfor %}
+		  </ul>
+		  <div class="desc_row">
+			<div class="tab-content">
+			  {% for tab in tabs %}
+			  	<div id="tab_{{tab.id}}" class="tab-pane fade {% if tab.active %}in active{% endif %}">
+					<figure class="highlight">
+				  		<code class="language-bash">{{tab.listing}}</code>
+					</figure>
+					<h3>{{tab.title}}</h3>
+					<p>{{tab.text}}</p>
+			  	</div>
+			  {% endfor %}
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+</section>
