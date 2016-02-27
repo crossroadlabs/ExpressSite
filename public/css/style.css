@@ -1,0 +1,249 @@
+/*===--- style.css ----------------------------------------------------===//
+//
+//Copyright (c) 2015-2016 Daniel Leping (dileping)
+//
+//This file is part of Swift Express Site.
+//
+//Swift Express Site is free software: you can redistribute it and/or modify
+//it under the terms of the GNU Affero General Public License as published by
+//the Free Software Foundation, either version 3 of the License, or
+//(at your option) any later version.
+//
+//Swift Express Site is distributed in the hope that it will be useful,
+//but WITHOUT ANY WARRANTY; without even the implied warranty of
+//MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//GNU Affero General Public License for more details.
+//
+//You should have received a copy of the GNU Affero General Public License
+//along with Swift Express Site.  If not, see <http://www.gnu.org/licenses/>.
+//
+//===----------------------------------------------------------------------===*/
+
+/* default classes */
+ * {
+	-webkit-box-sizing: border-box; /* For Firefox */
+	-moz-box-sizing: border-box; /* For Firefox */  
+  box-sizing: border-box; /* Block width with borders */
+}
+.navbar-fixed-top {
+ -webkit-transition: background 200ms ease-in;
+  -moz-transition: background 200ms ease-in;
+  -ms-transition: background 200ms ease-in;
+  -o-transition: background 200ms ease-in;
+  transition: background 200ms ease-in;
+}
+.navbar-fixed-top.full_background {
+  background: rgba(255,255,255,.2);
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
+  -webkit-transition: background 200ms ease-in;
+  -moz-transition: background 200ms ease-in;
+  -ms-transition: background 200ms ease-in;
+  -o-transition: background 200ms ease-in;
+  transition: background 200ms ease-in;
+  z-index: 99;
+}
+.navbar-fixed-top .navbar-nav {
+  margin-top: 5px;
+}
+
+/* main style*/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.header-bg {
+  width: 100%;
+  height: 60vh;
+  min-height: 790px;
+  padding: 0;
+  background-image: url(../images/main_bg.png);
+  background-color: rgba(0, 0, 0, 0);
+  background-size: cover;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  opacity: 1;
+  visibility: inherit;
+  z-index: 1;
+}
+#h_l {
+  margin-top: 150px;
+}
+.navbar-brand {
+  padding: 7px 15px;
+}
+.navbar-brand img {
+  margin-right: 100px
+}
+.navbar-default .navbar-nav > li > a {
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  font-size: 14px;
+  font-weight: 900;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #4a160d;
+  background-color: #949597;
+}
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+  border: none;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+  /* color: #4a160d;
+  background-color: #949597;  */
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+
+/* Main Section */
+.block_os {
+  padding-bottom: 25px;
+}
+.lightgray_bg {
+  background: #fafafa;
+}
+.os_list  {
+  margin-top: -40px;
+  position: relative;
+  z-index: 9;
+  display:table;
+  width:100%;
+}
+.os_list li {
+  display: inline-block;
+  background: #000;
+  width: 50%;
+
+  font-size:0;
+  word-spacing: 0;
+}
+.os_list li  a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  word-spacing: normal;
+  line-height: 40px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+  background: #fff;
+  color: #000;
+  border: none;
+}
+.tab-content .nav>li>a:focus,
+.nav>li>a:hover {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+}
+
+.highlight code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre-wrap;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  display:block;
+  background: #fff;
+}
+.tab-pane {
+  padding: 15px;
+}
+.desc p,
+.desc_row p {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* main section end */
+
+/* Home Bottom Section*/
+.gray_bg {
+  background: #EDEDED;
+}
+/* Home Bottom Section END */
+
+
+
+
+/*fotoer */
+footer  {
+  font-size: 11px;
+  
+}
+footer > .gray_bg {
+  padding: 50px 0 30px 0;
+}
+.blue {
+  color: #008aff;
+}
+
+.footer_bottom > div {
+  display: inline-block;
+}
+footer .legal,
+footer .fork,
+footer .dev_by {
+  margin:0 50px;
+  position: relative;
+  font-size: 11px;
+}
+footer .dev_by:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: 0;
+  background: url(../images/swift_mark.png);
+  background-size: 100%;
+  height: 12px;
+  width: 12px;
+}
+footer .fork:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: 0;
+  background: url(../images/fork_ico.png);
+  background-size: 100%;
+  height: 12px;
+  width: 10px;
+}
+
+/*fotoer end*/
+
+/* MEDIA Q*/
+@media (max-width: 762px) {
+  .navbar-brand img {
+    margin-right: 0;
+    margin-left: -10px;
+  }
+  
+  footer .legal,
+  footer .fork,
+  footer .dev_by {
+    margin:0 10px;
+  }
+  
+}
