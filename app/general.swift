@@ -67,10 +67,10 @@ let tabs:[[String:Any]] = [
 ]
 
 let features:[[String:String]] = [
-    ["title": "Web Applications", "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."],
-    ["title": "APIs", "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."],
-    ["title": "Performance", "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."],
-    ["title": "Swift", "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."]
+    ["title": "Web Applications", "text": "Express is great for web applications. This site is a living proof. Tremendous performance and feature rich ecosystem. iOS developers will also benefit from the familiar development environment and language using the knowledge they already have."],
+    ["title": "APIs", "text": "Every iOS app needs a server side API today. Swift Express provides an easy and natural way to create RESTful JSON and XML APIs using the very same language, toolset and libraries you are already using for iOS development. What could be easier?"],
+    ["title": "Performance", "text": "Swift is a compiled language. That's it. No virtual machines, no scripts. Just pure performance. Swift Express leverages all the computing power it can get directly from the CPU. No performance killers approach makes the difference. Give it a try."],
+    ["title": "Swift", "text": "Swift is a language, born with Apple's usual quality stamp. Even considering it's rather young, it already shows awesome results. Made with developer's productivity in mind it's quickly becoming one of the most widespread languages today."]
 ]
 
 let scripts = ["js/jq.min.js", "js/bootstrap.min.js", "js/script.js"]
