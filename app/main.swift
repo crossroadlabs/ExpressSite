@@ -27,6 +27,21 @@ app.views.register(StencilViewEngine())
 
 app.get("/:file+", action: StaticAction(path: "public", param:"file"))
 
+app.get("/*") { request in
+    guard let host = request.headers["Host"] else {
+        return Action.chain()
+    }
+    
+    if host.hasPrefix("www.") {
+        let naked = host.substringFromIndex("www.".endIndex)
+        let proto = request.secure ? "https" : "http"
+        let target = proto + "://" + naked + request.uri
+        return Action.redirect(target)
+    }
+    
+    return Action.chain()
+}
+
 app.get("/") { request in
     let context:[String: Any] = [
         "product": product,
@@ -43,7 +58,7 @@ app.get("/") { request in
     return Action.render("index", context: context)
 }
 
-app.listen(9999).onSuccess { server in
+app.listen(80).onSuccess { server in
     print("Express was successfully launched on port", server.port)
 }
 
