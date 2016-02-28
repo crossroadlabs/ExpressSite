@@ -38,5 +38,5 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700,500,300,900' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,800,700,300' rel='stylesheet' type='text/css'>
   
-
+  {% include "jaco.stencil" %}
 </head>
