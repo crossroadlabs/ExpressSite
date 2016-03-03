@@ -26,6 +26,7 @@
 <body>
   <header class="header-bg">
     {% include "navbar.stencil" %}
+    {% include "fmogh.stencil" %}
     <div class="text-center">
       <img id="h_l" src="images/home_logo.png" alt="SwiftExpress">
     </div>
