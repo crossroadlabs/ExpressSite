@@ -43,6 +43,8 @@ app.get("/*") { request in
 app.get("/:file+", action: StaticAction(path: "public", param:"file"))
 
 app.get("/") { request in
+    let nojaco = request.headers["Host"].map {$0 != "swiftexpress.io"}.getOrElse(true)
+    
     let context:[String: Any] = [
         "product": product,
         "company": company,
@@ -53,7 +55,8 @@ app.get("/") { request in
         "navbar": siteNavbar("home"),
         "tabs": tabs,
         "features": features,
-        "scripts": scripts
+        "scripts": scripts,
+        "nojaco": nojaco
     ]
     return Action.render("index", context: context)
 }
