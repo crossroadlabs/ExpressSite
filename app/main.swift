@@ -25,8 +25,6 @@ let app = express()
 
 app.views.register(StencilViewEngine())
 
-app.get("/:file+", action: StaticAction(path: "public", param:"file"))
-
 app.get("/*") { request in
     guard let host = request.headers["Host"] else {
         return Action.chain()
@@ -41,6 +39,8 @@ app.get("/*") { request in
     
     return Action.chain()
 }
+
+app.get("/:file+", action: StaticAction(path: "public", param:"file"))
 
 app.get("/") { request in
     let context:[String: Any] = [
