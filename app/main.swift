@@ -43,9 +43,9 @@ app.get("/*") { request in
 app.get("/:file+", action: StaticAction(path: "public", param:"file"))
 
 app.get("/") { request in
-    let nojaco = request.headers["Host"].map {$0 != "swiftexpress.io"}.getOrElse(true)
+    let hasjaco = request.headers["Host"].map {$0 == "swiftexpress.io"}.getOrElse(false)
     
-    let context:[String: Any] = [
+    var context:[String: Any] = [
         "product": product,
         "company": company,
         "github": github,
@@ -55,9 +55,13 @@ app.get("/") { request in
         "navbar": siteNavbar("home"),
         "tabs": tabs,
         "features": features,
-        "scripts": scripts,
-        "nojaco": nojaco
+        "scripts": scripts
     ]
+    
+    if hasjaco {
+        context.updateValue(hasjaco, forKey: "hasjaco")
+    }
+    
     return Action.render("index", context: context)
 }
 
