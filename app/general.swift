@@ -31,7 +31,12 @@ public func ++ <Key: Hashable, Value>(left:Dictionary<Key, Value>, right:Diction
     return new
 }
 
-let product = ["short": "Express", "full": "Swift Express", "github": "https://github.com/crossroadlabs/Express"]
+let product = [
+    "short": "Express",
+    "full": "Swift Express",
+    "github": "https://github.com/crossroadlabs/Express",
+    "description": "Express is an asynchronous, simple, powerful, yet unopinionated web application server written in Swift"
+]
 let company = ["link": "http://www.crossroadlabs.xyz/", "title": "Crossroad Labs"]
 let github = "https://github.com/crossroadlabs/ExpressSite"
 let copyright = "Daniel Leping"
