@@ -23,6 +23,7 @@
 
 <head>
   <title>{{product.short}}: {{title}}</title>
+  <meta name="description" content="{{product.description}}" />
 	
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />

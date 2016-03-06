@@ -30,5 +30,5 @@
 <link rel="shortcut icon" href="/favicon.ico" />
 
 <!!- Facebook And Google Icon -->
-<meta property="og:image" content="/images/post_logo.png" />
+<meta name="og:image" content="/images/post_logo.png" />
 <!-- Icons End -->
