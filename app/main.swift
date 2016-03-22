@@ -20,12 +20,12 @@
 //===----------------------------------------------------------------------===//
 
 import Express
+import ExpressMarkdown
+import Markdown
 
 let app = express()
 
 app.views.register(StencilViewEngine())
-
-app.get("/:file+", action: StaticAction(path: "public", param:"file"))
 
 app.get("/*") { request in
     guard let host = request.headers["Host"] else {
@@ -41,6 +41,10 @@ app.get("/*") { request in
     
     return Action.chain()
 }
+
+app.get("/documentation/:file+", action: MarkdownAction(path: "documentation", param:"file",
+    single: MarkdownPageConfig(view: "doc", param: "markdown", options: .None), multi: nil, cacheControl: .NoStore))
+app.get("/:file+", action: StaticAction(path: "public", param:"file", cacheControl: .NoStore))
 
 app.get("/") { request in
     let context:[String: Any] = [
