@@ -30,7 +30,7 @@
 		<span class="icon-bar"></span>
 	  </button>
 	  <a class="navbar-brand" href="#">
-		<img src="images/logo.png" alt="logo" title="SwiftExpress">
+		<img src="images/logo.svg" alt="logo" title="{{product.full}}">
 	  </a>
 	</div>
 	<div id="navbar" class="navbar-collapse collapse">
@@ -54,5 +54,19 @@
 		-->
 	  </ul>
 	</div><!--/.nav-collapse -->
+	<div class="top_soc_block">
+		<ul>
+			<li class="tw_ico"><a href="#" ></a></li>
+			<li class="fb_ico"><a href="#" ></a></li>
+			<li class="li_ico"><a href="#" ></a></li>
+		</ul>
+    </div>
   </div>
 </nav>
+<div id="soc_block" class="container">
+	<div class="h0">
+		<div class="tw_ico_hover"></div>
+		<div class="fb_ico_hover"></div>
+		<div class="li_ico_hover"></div>
+	</div>
+</div>

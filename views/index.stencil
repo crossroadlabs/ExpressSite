@@ -24,13 +24,21 @@
 <html>
 	{% include "head.stencil" %}
 <body>
-  <header class="header-bg">
+  <header>
     {% include "navbar.stencil" %}
     {% include "fmogh.stencil" %}
-    <div class="text-center">
-      <img id="h_l" src="images/home_logo.png" alt="SwiftExpress">
-    </div>
   </header>
+  <div class="header-bg">
+    <div class="text-center logo-wrap">
+      <div class="w65">
+      <img id="banner_logo" src="images/logo_banner.png" alt="{{product.full}}">
+      </div>
+      <h2 class="banner_title_h2">
+        <strong>Lorem ipsum dolor sit amet</strong><br>
+        <span>Duis aute irure dolor in reprehenderit</span>
+      </h2>
+    </div>
+  </div>
   
   {% include "tabs.stencil" %}
   

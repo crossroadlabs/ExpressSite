@@ -1,29 +1,29 @@
 /*===--- style.css ----------------------------------------------------===//
-//
-//Copyright (c) 2015-2016 Daniel Leping (dileping)
-//
-//This file is part of Swift Express Site.
-//
-//Swift Express Site is free software: you can redistribute it and/or modify
-//it under the terms of the GNU Affero General Public License as published by
-//the Free Software Foundation, either version 3 of the License, or
-//(at your option) any later version.
-//
-//Swift Express Site is distributed in the hope that it will be useful,
-//but WITHOUT ANY WARRANTY; without even the implied warranty of
-//MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//GNU Affero General Public License for more details.
-//
-//You should have received a copy of the GNU Affero General Public License
-//along with Swift Express Site.  If not, see <http://www.gnu.org/licenses/>.
-//
-//===----------------------------------------------------------------------===*/
+ //
+ //Copyright (c) 2015-2016 Daniel Leping (dileping)
+ //
+ //This file is part of Swift Express Site.
+ //
+ //Swift Express Site is free software: you can redistribute it and/or modify
+ //it under the terms of the GNU Affero General Public License as published by
+ //the Free Software Foundation, either version 3 of the License, or
+ //(at your option) any later version.
+ //
+ //Swift Express Site is distributed in the hope that it will be useful,
+ //but WITHOUT ANY WARRANTY; without even the implied warranty of
+ //MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ //GNU Affero General Public License for more details.
+ //
+ //You should have received a copy of the GNU Affero General Public License
+ //along with Swift Express Site.  If not, see <http://www.gnu.org/licenses/>.
+ //
+ //===----------------------------------------------------------------------===*/
 
 /* default classes */
  * {
-	-webkit-box-sizing: border-box; /* For Firefox */
-	-moz-box-sizing: border-box; /* For Firefox */  
-  box-sizing: border-box; /* Block width with borders */
+	-webkit-box-sizing: border-box; /* Для Firefox */  
+	-moz-box-sizing: border-box; /* Для Firefox */  
+  box-sizing: border-box; /* Ширина блока с полями */
 }
 .navbar-fixed-top {
  -webkit-transition: background 200ms ease-in;
@@ -34,13 +34,14 @@
 }
 .navbar-fixed-top.full_background {
   background: rgba(255,255,255,.2);
+  background: #545456;
   box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
   -webkit-transition: background 200ms ease-in;
   -moz-transition: background 200ms ease-in;
   -ms-transition: background 200ms ease-in;
   -o-transition: background 200ms ease-in;
   transition: background 200ms ease-in;
-  z-index: 99;
+  z-index: 999;
 }
 .navbar-fixed-top .navbar-nav {
   margin-top: 5px;
@@ -66,14 +67,92 @@ body {
   visibility: inherit;
   z-index: 1;
 }
-#h_l {
+
+/* SOC top*/
+#banner_logo {
+  width: 100%;
+  max-width: 647px;
+}
+header .container {
+  position: relative;
+}
+.top_soc_block {
+  position: absolute;
+  top: 60px;
+  right:20px;
+  z-index: 999;
+  -webkit-transition: 200ms ease-in;
+  -moz-transition: 200ms ease-in;
+  -ms-transition: 200ms ease-in;
+  -o-transition: 200ms ease-in;
+  transition: 200ms ease-in;
+}
+.top_soc_block.fixed_soc {
+  top: 10px;
+}
+.top_soc_block li {
+  display: inline-block;
+  margin-left: 5px;
+}
+.top_soc_block a {
+  display: block;
+  width: 31px;
+  height: 31px;
+    -webkit-transition: 200ms ease-in;
+  -moz-transition: 200ms ease-in;
+  -ms-transition: 200ms ease-in;
+  -o-transition: 200ms ease-in;
+  transition: 200ms ease-in;
+}
+.tw_ico a {background: url(../images/soc/tw_red.svg);}
+.fb_ico a {background: url(../images/soc/facebook_red.svg);}
+.li_ico a {background: url(../images/soc/in_red.svg);}
+.h0 {
+  height: 0px;
+  overflow: hidden;
+}
+.h0 > div {
+    width: 31px;
+  height: 31px;
+}
+.tw_ico_hover,
+.tw_ico a:hover {background: url(../images/soc/tw.svg);}
+.fb_ico_hover,
+.fb_ico a:hover {background: url(../images/soc/facebook.svg);}
+.li_ico_hover,
+.li_ico a:hover {background: url(../images/soc/in.svg);}
+
+/* SOC top end*/
+.logo-wrap {
   margin-top: 150px;
+  position: relative;
+}
+.logo-wrap .w65 {
+  width: 65%;
+  display: inline-block;
+}
+.banner_title_h2 {
+  width: 100%;
+  text-align:center;
+  position: absolute;
+  bottom: 10%;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+.banner_title_h2 strong {
+  font-size: 48px;
+  font-weight: 400;
+}
+.banner_title_h2 span {
+  font-size: 30px;
+  font-weight: 300;
 }
 .navbar-brand {
   padding: 7px 15px;
 }
 .navbar-brand img {
-  margin-right: 100px
+  margin-right: 100px;
+  width:176px;
 }
 .navbar-default .navbar-nav > li > a {
   -webkit-transition: background-color 0.5s ease;
@@ -97,7 +176,6 @@ body {
   border-color: transparent;
   border: none;
 }
-
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
   /* color: #4a160d;
@@ -105,9 +183,6 @@ body {
   color: #fff;
   text-decoration: underline;
 }
-
-
-
 /* Main Section */
 .block_os {
   padding-bottom: 25px;
@@ -118,20 +193,20 @@ body {
 .os_list  {
   margin-top: -40px;
   position: relative;
-  z-index: 9;
+  z-index: 2;
   display:table;
   width:100%;
 }
 .os_list li {
   display: inline-block;
-  background: #000;
+  background: rgba(255,255,255,.5);
   width: 50%;
-
+  
   font-size:0;
   word-spacing: 0;
 }
 .os_list li  a {
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   font-size: 18px;
   word-spacing: normal;
@@ -140,7 +215,43 @@ body {
   margin: 0;
   padding: 0;
   border: none;
+  background: rgba(255,255,255,.5);
 }
+.linux_ico span,
+.mac_ico span {
+  position: relative; 
+}
+.mac_ico > span:before {
+  content:"";
+  display: block;
+  background: url(../images/apple.svg);
+  background-position: bottom right;
+  width: 17px;
+  height: 20px;
+  position: absolute;
+  bottom: 3px;
+  left: -30px;  
+}
+.linux_ico > span:before {
+  content:"";
+  display: block;
+  background: url(../images/linux.svg);
+  background-position: top right;
+  width: 17px;
+  height: 20px;
+  position: absolute;
+  bottom: 3px;
+  left: -30px;  
+}
+/*
+.os_list .active .linux_ico > span:before {
+  background-position: top left;  
+}
+
+.os_list .active .mac_ico > span:before {
+  background-position: bottom left;  
+}
+*/
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:focus,
 .nav-tabs>li.active>a:hover {
@@ -151,10 +262,9 @@ body {
 .tab-content .nav>li>a:focus,
 .nav>li>a:hover {
   text-decoration: none;
-  background-color: #000;
-  color: #fff;
+  background: rgba(255,255,255,.5);
+  color: #000;
 }
-
 .highlight code {
   padding: 0;
   font-size: inherit;
@@ -174,7 +284,6 @@ body {
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
 }
-
 /* main section end */
 
 /* Home Bottom Section*/
@@ -184,12 +293,9 @@ body {
 /* Home Bottom Section END */
 
 
-
-
 /*fotoer */
 footer  {
   font-size: 11px;
-  
 }
 footer > .gray_bg {
   padding: 50px 0 30px 0;
@@ -214,10 +320,10 @@ footer .dev_by:before {
   position: absolute;
   left: -20px;
   top: 0;
-  background: url(../images/swift_mark.png);
+  background: url(../images/bird.svg);
   background-size: 100%;
+  width: 16px;
   height: 12px;
-  width: 12px;
 }
 footer .fork:before {
   content: "";
@@ -225,25 +331,67 @@ footer .fork:before {
   position: absolute;
   left: -20px;
   top: 0;
-  background: url(../images/fork_ico.png);
+  background: url(../images/fork_ico.svg);
   background-size: 100%;
-  height: 12px;
   width: 10px;
+  height: 12px;
+  height: 12px;
 }
 
 /*fotoer end*/
 
 /* MEDIA Q*/
 @media (max-width: 762px) {
+  .logo-wrap .w65 {
+    width: 100%;
+  }
   .navbar-brand img {
     margin-right: 0;
     margin-left: -10px;
+  }
+  .banner_title_h2 strong {
+  font-size: 36px;
+  font-weight: 400;
+  }
+  .banner_title_h2 span {
+    font-size: 20px;
+    font-weight: 300;
   }
   
   footer .legal,
   footer .fork,
   footer .dev_by {
     margin:0 10px;
+  }
+  .top_soc_block.fixed_soc {
+    top: 60px;
+  }
+}
+
+@media (max-width:480px) {
+
+  .banner_title_h2 {
+    bottom: -50px;
+  }
+  .banner_title_h2 strong {
+    font-size: 24px;
+  }
+  
+  .banner_title_h2 span {
+    font-size: 18px;
+  }
+  .linux_ico span:before, 
+  .mac_ico span:before {
+    left: -20px; 
+  }
+}
+
+@media (min-width:370px) and (max-width: 762px) {
+  
+  .top_soc_block,
+  .top_soc_block.fixed_soc {
+    top: 10px;
+    right: 80px;
   }
   
 }
