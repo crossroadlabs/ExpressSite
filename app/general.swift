@@ -78,4 +78,9 @@ let features:[[String:String]] = [
     ["title": "Swift", "text": "Swift is a language, born with Apple's usual quality stamp. Even considering it's rather young, it already shows awesome results. Made with developer's productivity in mind it's quickly becoming one of the most widespread languages today."]
 ]
 
+let partners:[[String:String]] = [
+    ["name": "JetBrains", "logo": "/images/partners/logo_JetBrains_4.svg", "link": "https://www.jetbrains.com/"],
+    ["name": "Crossroad Labs", "logo": "/images/partners/logo.svg", "link": "http://www.crossroadlabs.xyz/"]
+]
+
 let scripts = ["js/jq.min.js", "js/bootstrap.min.js", "js/script.js"]

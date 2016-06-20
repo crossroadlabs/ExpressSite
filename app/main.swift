@@ -55,6 +55,7 @@ app.get("/") { request in
         "navbar": siteNavbar("home"),
         "tabs": tabs,
         "features": features,
+        "partners": partners,
         "scripts": scripts
     ]
     

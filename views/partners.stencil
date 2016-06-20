@@ -1,5 +1,5 @@
 <!--
-//===--- index.stencil ----------------------------------------------------===//
+//===--- partners.stencil ----------------------------------------------------===//
 //
 //Copyright (c) 2015-2016 Daniel Leping (dileping)
 //
@@ -20,26 +20,15 @@
 //
 //===----------------------------------------------------------------------===//
 -->
-<!DOCTYPE html>
-<html>
-	{% include "head.stencil" %}
-<body>
-  <header class="header-bg">
-    {% include "navbar.stencil" %}
-    {% include "fmogh.stencil" %}
-    <div class="text-center">
-      <img id="h_l" src="images/home_logo.png" alt="SwiftExpress">
-    </div>
-  </header>
-  
-  {% include "tabs.stencil" %}
-  
-  {% include "features.stencil" %}
-  {% include "partners.stencil" %}
-  
-  {% include "footer.stencil" %}
-  
-  {% include "scripts.stencil" %}
-  
-</body>
-</html>
+<section>
+	<div class="lightgray_bg">
+	  <div style="display: table; width: 100%;">
+	    <div style="display: table-cell; text-align: center; vertical-align: middle;">
+	  	  {% for partner in partners %}
+		      <!--h4 style="text-align: center; margin-top:500px">{{partner.name}}</h4-->
+		      <a href="{{partner.link}}"><img src="{{partner.logo}}" alt="{{partner.name}}" height="250px"/></a>
+		  {% endfor %}
+		</div>
+	  </div>
+	</div>
+</section>
